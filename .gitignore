@@ -1,0 +1,6 @@
+qa/
+artwork/
+social/
+node_modules/
+*.log
+*.zip

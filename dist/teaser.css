@@ -1,0 +1,165 @@
+:root{--bg:#0c0b16;--surface:#151321;--ink:#f0ebf7;--muted:#a8a1b8;--line:#302a40;--accent:#c4a4ee;--amber:#bba1dc}
+body{background:var(--bg)}
+.site-header{border-bottom:0;min-height:100px}
+.site-header .brand{font-size:25px}
+.domain{color:#958ba5}
+em{color:#cfb2f4}
+.eyebrow{color:#b7a0d2;font-size:10px;letter-spacing:1.8px}
+.mythic-hero{position:relative;isolation:isolate;aspect-ratio:2/1;width:min(100%,1920px);margin-inline:auto;overflow:hidden;background:#090516}
+.mythic-art{position:absolute;inset:0;z-index:-2}
+.mythic-art img{display:block;width:100%;height:100%;object-fit:cover}
+.art-wash{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#0b061845,transparent 36%,transparent 86%,#0b0618b0),linear-gradient(115deg,#0c061c80,transparent 45%)}
+.ambient-glow{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 65% 70%,#b47de011,transparent 62%);animation:slow-glow 18s ease-in-out infinite alternate}
+.mythic-title{padding-top:clamp(24px,2vw,38px);position:relative}
+.mythic-title .eyebrow{font-size:8px;color:#d0b7ed;letter-spacing:1.6px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.quiet-dot{display:inline-block;width:4px;height:4px;border-radius:50%;background:#ccb0ef;flex-shrink:0}
+.mythic-title h1{font-size:clamp(48px,4.8vw,70px);line-height:1.02;letter-spacing:-2.4px;color:#f6efff;text-shadow:0 2px 26px #120b2f50}
+.mythic-title h1 em{color:#d3b2ff}
+.hero-floor{position:absolute;bottom:18px;left:0;right:0;display:flex;justify-content:space-between;gap:25px;font:8px/1.6 ui-monospace,Consolas,monospace;letter-spacing:1.3px;color:#d4c1e7}
+.hero-floor a{white-space:nowrap;color:#f4eaff}
+.hero-floor a span{margin-left:20px}
+.hero-introduction{display:grid;grid-template-columns:1fr auto;align-items:center;gap:70px;padding-block:31px;border-bottom:1px solid var(--line)}
+.hero-introduction>p{font-size:16px;line-height:1.75;color:#c2b7ce;max-width:750px;margin:0}
+.follow-actions{display:flex;align-items:center;gap:12px}
+.follow-button{display:inline-flex;align-items:center;justify-content:center;gap:11px;white-space:nowrap;min-height:47px;border:1px solid #615071;border-radius:4px;padding:12px 16px;font-size:12px;color:#e0d2ed;transition:background .2s,border-color .2s}
+.follow-button svg{width:18px;height:18px;flex-shrink:0}
+.follow-button>span{margin-left:9px}
+.follow-button:hover{background:#2a2039;border-color:#b092ce}
+.primary-follow{background:#c2a4e1;border-color:#c2a4e1;color:#23142e}
+.primary-follow .play-cutout{fill:#c2a4e1}
+.primary-follow:hover{background:#d4b8ef;border-color:#d4b8ef;color:#23142e}
+.primary-follow:hover .play-cutout{fill:#d4b8ef}
+.inside-section{padding-block:80px 75px;border-bottom:1px solid var(--line)}
+.section-top h2,.worlds-intro h2,.difference-inner h2,.stay-section h2{font-size:clamp(35px,3.8vw,55px);line-height:1.1;letter-spacing:-1.7px}
+.life-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:50px;margin-top:38px}
+.life-cards article{position:relative;padding:30px 25px 23px;border:1px solid #342c44;border-radius:5px;background:linear-gradient(140deg,#181622,#100e19)}
+.life-symbol{display:block;font:39px/1 Georgia,serif;margin-bottom:25px}
+.teal-symbol{color:#a0c8c1;text-shadow:0 0 25px #70d4c330}
+.gold-symbol{color:#d7bb8b;text-shadow:0 0 25px #dbb65a25}
+.violet-symbol{color:#c3a3ed;text-shadow:0 0 25px #b783f330}
+.life-cards h3{font:30px/1.2 Georgia,serif;letter-spacing:-.5px;margin:0 0 16px}
+.life-cards p{font-size:14px;line-height:1.85;color:#b2a8c0;margin:0;max-width:330px}
+.worlds-section{padding-block:80px 75px}
+.worlds-intro{display:grid;grid-template-columns:1fr 1.1fr;gap:95px;align-items:end}
+.worlds-intro>p{font-size:16px;line-height:1.85;color:#bcb0ca;max-width:600px;margin:0}
+.gallery-intro{font-size:12px;color:#9f91af;margin:34px 0 21px}
+.world-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px 30px}
+.world-card{border:1px solid #342a43;border-radius:5px;overflow:hidden;background:#14101d;min-width:0}
+.world-image{display:block;position:relative;overflow:hidden;aspect-ratio:1672/941;background:#151122}
+.world-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.5s ease}
+.world-image:hover img{transform:scale(1.025)}
+.world-image:focus-visible{outline-offset:-5px;z-index:1}
+.artwork-zoom{position:absolute;right:15px;bottom:15px;display:grid;place-items:center;width:30px;height:30px;background:#15101eb3;border:1px solid #f0deff59;border-radius:50%;font-size:17px;color:#f1e7ff;backdrop-filter:blur(7px)}
+.world-card-copy{display:flex;align-items:start;justify-content:space-between;gap:20px;padding:23px 24px 25px}
+.world-number{font:8px/1.6 ui-monospace,Consolas,monospace;letter-spacing:1.5px;color:#a291b5;margin:0 0 9px}
+.world-card h3{font:29px/1.2 Georgia,serif;letter-spacing:-.6px;color:#eee3fa;margin:0}
+.world-mood{font-size:12px;line-height:1.7;color:#a99ab9;margin:11px 0 0}
+.coming-soon{flex-shrink:0;margin-top:2px;font:8px/1.5 ui-monospace,Consolas,monospace;letter-spacing:.7px;color:#cbb2e4;border:1px solid #644676;padding:6px 8px;border-radius:3px;white-space:nowrap}
+.difference-section{padding-block:68px;background:radial-gradient(ellipse at 75% 70%,#66502e14,transparent 70%),#15121d;border-block:1px solid #3c3045}
+.difference-inner{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:95px}
+.difference-inner>p{font-size:20px;line-height:1.8;color:#d0c1dc;max-width:650px;margin:0}
+.stay-section{display:grid;grid-template-columns:1fr 1.1fr;gap:95px;padding-block:80px;border-bottom:1px solid var(--line)}
+.stay-intro{font-size:19px;line-height:1.7;color:#d5c4e6;margin:22px 0 0}
+.stay-copy{font-size:14px;color:#a99ab7;line-height:1.85;margin:20px 0 0}
+.stay-panel{padding-top:8px}
+#waitlist-form label{font-size:12px;color:#d9cce7}
+.signup-row{display:grid;grid-template-columns:1fr auto;gap:12px;margin-top:11px}
+.signup-row input{width:100%;min-width:0;margin:0!important;background:#191320!important;border:1px solid #654e76!important;color:#d7c5e7;border-radius:4px;padding:14px 15px;font:14px/1.5 Arial,Helvetica,sans-serif;opacity:1}
+.signup-row input::placeholder{color:#9e8ead}
+.signup-row input:disabled{cursor:not-allowed}
+.signup-row button{font-size:13px;display:flex;align-items:center;gap:24px;padding:13px 17px;background:#9f85b8;color:#201329;border:1px solid #9f85b8;border-radius:4px}
+.signup-row button:disabled{cursor:not-allowed;opacity:.7}
+#waitlist-note{font-size:11px;line-height:1.8;color:#b8a4c9;margin:14px 0 0}
+.stay-socials{display:flex;flex-wrap:wrap;gap:30px;margin-top:30px;padding-top:23px;border-top:1px solid var(--line)}
+.stay-socials a{display:inline-flex;gap:27px;font-size:13px;color:#d0b9e5;border-bottom:1px solid #644d76;padding-bottom:9px}
+.privacy-link{display:inline-block;margin-top:21px;font-size:11px;color:#9e8bad}
+.footer-top>a:not(.brand){font-size:12px;color:#b8a5c7}
+.footer-top{flex-wrap:wrap}
+.footer-bottom{color:#95839f}
+.document a{color:#d3b5ed}
+.world-dialog{width:min(1300px,94vw);max-height:94dvh;margin:auto;padding:0;border:1px solid #76558b;border-radius:6px;background:#120d1c;color:#f0e6fa;overflow:auto;box-shadow:0 20px 100px #0009}
+.world-dialog::backdrop{background:#06030dd9;backdrop-filter:blur(6px)}
+.viewer-content{padding:21px}
+.viewer-heading{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-bottom:19px}
+.viewer-heading .eyebrow{font-size:8px;margin-bottom:8px}
+.viewer-heading h2{font-size:30px;letter-spacing:-.6px;line-height:1.2}
+.viewer-close{display:grid;place-items:center;width:42px;height:42px;flex-shrink:0;border:1px solid #6f4f86;border-radius:50%;font:27px/1 Arial,sans-serif;background:#291b38;color:#e4cff4}
+.viewer-close:hover{background:#452c59}
+#viewer-image{display:block;width:100%;height:auto;max-height:73dvh;object-fit:contain;background:#0a0710}
+.viewer-note{font-size:10px;color:#c8aada;margin:14px 0 0;text-align:right}
+@keyframes slow-glow{from{opacity:.25}to{opacity:1}}
+@media(max-width:1100px){
+  .mythic-hero{display:flex;flex-direction:column;aspect-ratio:auto}
+  .mythic-title{order:0;padding-block:32px 30px}
+  .mythic-title h1{font-size:clamp(45px,7vw,70px);line-height:1.04}
+  .mythic-art{position:relative;inset:auto;order:1;z-index:0;aspect-ratio:2/1}
+  .mythic-art img{object-fit:contain}
+  .art-wash,.ambient-glow{display:none}
+  .hero-floor{position:relative;order:2;bottom:auto;left:auto;right:auto;width:90%;padding:16px 0;font-size:8px;align-items:center;border-bottom:1px solid var(--line)}
+  .hero-floor>span:nth-child(2){display:none}
+  .hero-introduction{grid-template-columns:1fr;gap:22px;padding-block:25px}
+  .hero-introduction>p{max-width:700px;font-size:15px}
+  .life-cards{gap:24px}
+  .worlds-intro,.difference-inner,.stay-section{gap:50px}
+  .world-card-copy{padding:20px;gap:12px}
+  .world-card h3{font-size:26px}
+  .coming-soon{font-size:7px;padding:5px 6px}
+}
+@media(max-width:760px){
+  .site-header{min-height:82px}
+  .site-header .brand{font-size:23px}
+  .site-header nav{gap:18px}
+  .site-header nav a:first-child{display:none}
+  .site-header nav a:nth-child(2){display:inline}
+  .mythic-title{padding-block:29px 27px}
+  .mythic-title .eyebrow{font-size:7px;letter-spacing:1.2px;gap:6px;margin-bottom:17px}
+  .mythic-title h1{font-size:clamp(43px,8.2vw,64px);letter-spacing:-1.7px}
+  .hero-floor{font-size:7px;letter-spacing:.8px;padding-block:14px;gap:16px}
+  .hero-floor a span{margin-left:8px}
+  .hero-introduction{gap:22px;padding-block:25px}
+  .hero-introduction>p{font-size:14px;line-height:1.85}
+  .follow-actions{gap:10px;flex-wrap:wrap}
+  .follow-button{font-size:11px;gap:8px;padding:11px 13px;min-height:45px}
+  .follow-button>span{margin-left:3px}
+  .follow-button svg{width:16px;height:16px}
+  .inside-section{padding-block:53px}
+  .section-top h2,.worlds-intro h2,.difference-inner h2,.stay-section h2{font-size:36px;letter-spacing:-1.1px}
+  .life-cards{grid-template-columns:1fr;gap:17px;margin-top:28px}
+  .life-cards article{display:grid;grid-template-columns:45px 1fr;gap:9px 18px;padding:23px}
+  .life-symbol{font-size:32px;grid-row:1/3;margin:2px 0 0}
+  .life-cards h3{font-size:27px;margin:0}
+  .life-cards p{font-size:13px;max-width:430px;grid-column:2}
+  .worlds-section{padding-block:53px}
+  .worlds-intro{grid-template-columns:1fr;gap:23px}
+  .worlds-intro>p{font-size:14px;line-height:1.85}
+  .gallery-intro{font-size:11px;margin-block:27px 18px}
+  .world-grid{grid-template-columns:1fr;gap:25px}
+  .world-card-copy{padding:21px}
+  .world-card h3{font-size:28px}
+  .world-number{font-size:8px}
+  .world-mood{font-size:12px}
+  .coming-soon{font-size:8px}
+  .difference-section{padding-block:50px}
+  .difference-inner{grid-template-columns:1fr;gap:25px}
+  .difference-inner>p{font-size:17px;line-height:1.9}
+  .stay-section{grid-template-columns:1fr;padding-block:53px;gap:26px}
+  .stay-intro{font-size:18px;margin-top:22px}
+  .stay-copy{font-size:13px;margin-top:15px}
+  .signup-row{gap:9px}
+  .signup-row input{font-size:13px;padding:13px 12px}
+  .signup-row button{font-size:12px;padding:13px 12px;gap:15px}
+  #waitlist-note{font-size:10px}
+  .stay-socials{gap:24px;margin-top:26px;padding-top:20px}
+  .stay-socials a{font-size:12px;gap:20px}
+  .footer-top{gap:20px}
+  .footer-top>a:last-child{margin-left:0;font-size:12px}
+  .world-dialog{width:95vw;max-height:95dvh}
+  .viewer-content{padding:13px}
+  .viewer-heading h2{font-size:24px}
+  .viewer-heading .eyebrow{font-size:7px;letter-spacing:1px}
+  .viewer-close{width:36px;height:36px;font-size:24px}
+  .viewer-note{font-size:9px;margin-top:10px}
+}
+@media(max-width:380px){.brand{gap:8px}.site-header nav{gap:12px;font-size:11px}.hero-floor{font-size:6px}.mythic-title .eyebrow{font-size:6px}.follow-button{padding-inline:10px;font-size:10px}.follow-actions{gap:8px}.world-card-copy{padding:18px}.world-card h3{font-size:25px}.coming-soon{font-size:7px}.signup-row button{gap:8px}.footer-bottom>span:nth-child(2){display:none}}
+@media(prefers-reduced-motion:reduce){.ambient-glow{animation:none}.world-image img{transition:none}.world-image:hover img{transform:none}}
+@media(max-width:380px){.site-header nav a:nth-child(2){display:none}.mythic-title h1{font-size:40px}}
