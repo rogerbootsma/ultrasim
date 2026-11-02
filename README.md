@@ -23,7 +23,7 @@ Email signup is intentionally a design preview, as selected by the user. Both fi
 
 Hero footage can replace the approved static artwork later. The current mark shows an open box with a soft organic form emerging from it. Motion is limited to a subtle glow on desktop.
 
-Follow links use the confirmed existing accounts: YouTube `@asimulation-io` and X `@asimulation_io`. The footer links to `assimilation.io` as specified in the brief, plus the contact email and Impressum.
+Follow links use the confirmed existing accounts: YouTube `@asimulation-io` and X `@asimulation_io`. The footer links to the confirmed existing `asimulation.io` project, plus the contact email and Impressum.
 
 Earlier page versions are archived locally in ignored `qa/archive/`.
 
